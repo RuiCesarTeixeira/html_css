@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexivel">
+    </picture>
+
+
+    <!-- a tag picture é boa para mostrar a mesma imagem de forma eficiente nos diferentes dispositvos, como celular e computador
+     
+    a tag source serve para mudar a imagem conforme a tela for aumentando ou diminuindo nela você diz que se a tela chegar um determinado tamanho, mudar a imagem para o endereço que está na tag srcset , por fim a tag type e para você dizer que tipo de imagem está esta usando-->
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+
+    <!-- Forma limitada de adicionar áudio-->
+    <audio src="midia/02 - Pijama.mp3"  controls autoplay></audio>
+    <!-- Compativel com MP3, WAV e OGG  e mesmo assim o autoplay não funcionou-->
+
+    <h2>Jeito certo de adicionar o áudio</h2>
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/02 - Pijama.mp3" type="audio/mpeg">
+        <!--Type pode ser audio/mpeg para mp3, audio/ogg para o formato Ogg e audio/wav para o formato Wav -->
+
+        <!--No fim eles funcionaram da mesmoa forma, o autoplay não funcionou-->
+    </audio>
+
+
+    
+</body>
+</html>

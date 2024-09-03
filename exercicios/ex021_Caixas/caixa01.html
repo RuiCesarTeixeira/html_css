@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{ /*Box-level*/
+            
+            background-color: lightgrey;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            /*Simplificando Boder
+
+            border: 10px solid darkslategray;
+
+            */
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /*Simplificando Padding
+            
+            padding: 10px 10px 10px 10px;
+
+            se forem iguais, basta 
+
+            padding: 10px;
+
+            se você colocar dois valores o de cima e debaixo ficam iguais e o da direita e esquerda fica iguais
+
+            */
+
+            margin-top: 20px;
+            margin-right: auto;
+            margin-bottom: 40px;
+            margin-left: auto;
+            
+            /*margn:auto siginifica colocar a caixa no meio */
+
+            /*Simplificando Margin
+            
+            margin: 20px 20px 20px 20px;
+
+            sempre indo no sentido horário
+
+            Centralizando Margin
+
+            margin: 20px auto 20px auto;
+
+            */
+
+            outline-width: 5px;
+            outline-style: dashed; 
+            outline-color: salmon;
+
+            /*outline e a borda que fica por dentro da margem, podendo até atravessar*/
+
+            /*Simplificando outline
+            
+            outline: 5px, dashed, salmon;*/
+            
+
+        }
+
+        a{   /*Inline-level*/
+            /*SIMPLIFICADOS*/
+            border: 10px, solid red;
+            padding: 10px;
+            margin: 20px 10px 20px 10px;
+            outline: 5px dashed black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">Links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funnciona.</p>
+
+
+    <!-- Exemplos de Caixas Box-level e Inline-level
+    
+    neste exemplos vemos que a box level ela quebra a linha, ela ocupa todo o espaço do site, não pode ter nada ao lado. Exemplo o H1 e p
+
+    já na Inline-Level pode colocar coisas au lado 
+    como o exemplo o (a) do link 
+
+    cada caixa temos 
+    conteudo
+    padding - espaço interno
+    border - borda
+    margin - espaço externo
+    -->
+    
+</body>
+</html>

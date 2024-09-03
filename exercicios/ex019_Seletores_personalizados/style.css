@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/*Em HTML é id = no CSS é # 
+Sempre que criar um id no HTML no CSS colocar # 
+ 
+Em HTML é class = no CSS é .
+Sempre que criar uma class no HTML no CSS colocar . (ponto)
+
+Obs: Só podemos usar uma vez o Id na página. Exemplo no id=principal você não pode usar ele novamente, funciona mais e contra as regras, neste sentido usamos a class 
+*/
+
+body{
+    background-color: rgb(183, 246, 246);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(16, 167, 2);
+}
+
+h1#principal{
+    text-align: center;
+    background-color:rgb(16, 167, 2);
+    color: white;
+}
+
+h2{
+    color: rgb(27, 93, 84);
+}
+
+.basico{
+    color: rgb(27, 93, 84);
+   
+}
+
+.intermediario{
+    color: rgb(239, 193, 6);
+   
+}
+
+.avançado{
+    color: rgb(230, 11, 11);
+}
+
+.destaque{
+    background-color: rgb(188, 188, 188);
+}
+
+p{
+    text-indent: 30px;
+}

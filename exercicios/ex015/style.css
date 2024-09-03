@@ -1,0 +1,22 @@
+@charset "UFT-8";
+
+
+
+body{
+    background-color: rgba(190, 207, 206, 0.97);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+h1{
+    color: maroon;
+    background-color: darkgoldenrod;
+}
+h2{
+    color: darkred;
+}
+
+p{
+    text-align: justify;
+    
+}
