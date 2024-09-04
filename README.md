@@ -3,4 +3,4 @@
 
 Estou aprendendo a a criar sites e agora vou gerenciar meus depositórios!
 
-<a herf = "https://ruicesarteixeira.github.io/html_css/exercicios/ex001/index.html"> executar o exercicio 001
+<a herf = "https://ruicesarteixeira.github.io/html_css/exercicios/ex001/index.html"> executar o exercicio 001</a>
