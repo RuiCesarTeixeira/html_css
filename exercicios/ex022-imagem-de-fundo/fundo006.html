@@ -3,20 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de Tela</title>
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover; /*esse comando deixa a tela inteira com a imagem sem distorcer, ocupa 100% da tela (vh) mas não mostra 100% da imagem */
+            background-size: cover; esse comando deixa a tela inteira com a imagem sem distorcer, ocupa 100% da tela (vh) mas não mostra 100% da imagem 
+            */
+            /* background-attachment: fixed;
+            
+            fixa a imagem na tela, enquanto o site rola
+
+            Shorthand - background
+            
+            color > image > position > repeat > (size)* > atachment
+            
+            o size não funcionou no shorthand, mas está no manual, tivemos que fazer separado
+            */
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat  fixed ;
+            background-size: cover
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -27,6 +41,12 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus veniam aliquam quas architecto! Repellendus odit debitis deleniti ipsum maiores necessitatibus aliquid fugiat iste eum, cum dicta repellat est sequi ad? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis debitis ratione hic dolorum consequuntur delectus accusamus, aliquid praesentium, exercitationem nihil non voluptatum molestiae, eum perferendis omnis animi! Perferendis, quidem! Numquam!Lorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus veniam aliquam quas architecto! Repellendus odit debitis deleniti ipsum maiores necessitatibus aliquid fugiat iste eum, cum dicta repellat est sequi ad? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis debitis ratione hic dolorum consequuntur delectus accusamus, aliquid praesentium, exercitationem nihil non voluptatum molestiae, eum perferendis omnis animi! Perferendis, quidem! Numquam!Lorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus veniam aliquam quas architecto! Repellendus odit debitis deleniti ipsum maiores necessitatibus aliquid fugiat iste eum, cum dicta repellat est sequi ad? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis debitis ratione hic dolorum consequuntur delectus accusamus, aliquid praesentium, exercitationem nihil non voluptatum molestiae, eum perferendis omnis animi! Perferendis, quidem! Numquam!Lorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus veniam aliquam quas architecto! Repellendus odit debitis deleniti ipsum maiores necessitatibus aliquid fugiat iste eum, cum dicta repellat est sequi ad? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis debitis ratione hic dolorum consequuntur delectus accusamus, aliquid praesentium, exercitationem nihil non voluptatum molestiae, eum perferendis omnis animi! Perferendis, quidem! Numquam!Lorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus veniam aliquam quas architecto! Repellendus odit debitis deleniti ipsum maiores necessitatibus aliquid fugiat iste eum, cum dicta repellat est sequi ad? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis debitis ratione hic dolorum consequuntur delectus accusamus, aliquid praesentium, exercitationem nihil non voluptatum molestiae, eum perferendis omnis animi! Perferendis, quidem! Numquam!Lorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus veniam aliquam quas architecto! Repellendus odit debitis deleniti ipsum maiores necessitatibus aliquid fugiat iste eum, cum dicta repellat est sequi ad? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis debitis ratione hic dolorum consequuntur delectus accusamus, aliquid praesentium, exercitationem nihil non voluptatum molestiae, eum perferendis omnis animi! Perferendis, quidem! Numquam!Lorem</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus veniam aliquam quas architecto! Repellendus odit debitis deleniti ipsum maiores necessitatibus aliquid fugiat iste eum, cum dicta repellat est sequi ad? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis debitis ratione hic dolorum consequuntur delectus accusamus, aliquid praesentium, exercitationem nihil non voluptatum molestiae, eum perferendis omnis animi! Perferendis, quidem! Numquam!Lorem</p>
 
 
