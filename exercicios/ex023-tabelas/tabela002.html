@@ -11,11 +11,38 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td,th{
             border: 1px solid black;
             padding: 10px;
         }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+            /*FIXAR A CABEÇARIO NA TABELA*/
+        }
+
+        tbody >tr:nth-child(2n){
+            background-color: lightgray;
+            /*colocar efeito zebrado na tabela
+            tambem pode ser feito:
+            
+            nth-child(odd) - impar
+
+            nth-child(even) - par
+            */
+        }
+
         thead, tfoot{
             background-color: gray;
             color: white;
@@ -32,6 +59,7 @@
     <h1>Uso de Tabelas grandes</h1>
     <!--Anatomia para tabelas grandes
     TABLE
+        CAPTION - LEGENDA
         THEAD   - Cabeça da tabela 
         TR, TD, TH 
         TBODY   - Corpo da Tabela
@@ -40,10 +68,11 @@
         TR, TD, TH         
     -->
     <table>
+        <CAption>População das Unidades Federativas</CAption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
 
             </tr>
         </thead>
@@ -177,7 +206,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>212 583 720</strong></td>
             </tr>
         </tfoot>
